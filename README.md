@@ -1,8 +1,6 @@
 gulp-gather
 ===================
 
-[![Build Status](https://travis-ci.org/otiai10/gulp-gather.svg?branch=master)](https://travis-ci.org/otiai10/gulp-gather)
-
 Respecting [micro-templating](http://ejohn.org/blog/javascript-micro-templating/)
 
 # why
@@ -30,8 +28,8 @@ To static pool like below
 
 ```javascript
 this.MicroTemplates = {
-    "tpl/foo.html": "<a href=\"<%= url %>\"><%= name %></a>",
-    "tpl/bar/baz.html": "<% for ( var i = 0; i < users.length; i++ ) { %>
+    "foo.html": "<a href=\"<%= url %>\"><%= name %></a>",
+    "baz.html": "<% for ( var i = 0; i < users.length; i++ ) { %>
   <li><a href=\"<%=users[i].url%>\"><%=users[i].name%></a></li>
 <% } %>"
 };
